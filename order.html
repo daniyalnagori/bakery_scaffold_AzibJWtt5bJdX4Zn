@@ -5,14 +5,14 @@
 
 <script>
 //Stripe API KEY
-var STRIPE_KEY = ''
+var STRIPE_KEY = 'pk_test_5rSZd5qPjY2LYHQ4Sd21yeiG00mxhV0WXf'
 var stripe = Stripe(STRIPE_KEY);
 $(function(){
   $('#btn-checkout').on('click', ()=>{
     stripe.redirectToCheckout({
       items: [
         // Replace with the ID of your SKU
-        {sku: 'sku_FXigPYULFvGqEa', quantity: 1}
+        {sku: 'sku_FU3zZM6tT4kxMM', quantity: 1}
       ],
       successUrl: 'https://example.com/success',
       cancelUrl: 'https://example.com/cancel',
